@@ -1,4 +1,63 @@
-.footer{
-  margin-left : 80px;
-  font-size : 18px;
+section {
+  width: 75%;
+  margin: 0 auto;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.heros,
+.villans {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(100px, auto);
+}
+.battleScore {
+  display: grid;
+  justify-content: center;
+  grid-auto-flow: column;
+}
+.battleScore > span {
+  font-size: xx-large;
+  font-weight: bold;
+  margin-right: 5px;
+  box-sizing: border-box;
+}
+.heros {
+  justify-content: left;
+}
+#hero1,
+#villan1 {
+  border: 3px solid gainsboro;
+  border-radius: 10px;
+  margin-right: 25px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#hero2,
+#villan2 {
+  border: 3px solid gainsboro;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.villans {
+  justify-content: right;
+}
+h2,
+p {
+  text-align: center;
+}
+p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+.footer {
+  width: 75%;
+  margin: 20px auto 0 auto;
+  font-size: 18px;
 }
